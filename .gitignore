@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+.vscode/        # IDE settings (personal preferences)
+.idea/          # JetBrains IDE configs
+
+# Build outputs
+dist/
+*.log           # Log files
+
+# Environment files
+.env
+.env.*          # All environment variants
+
+.DS_Store      # macOS metadata
+Thumbs.db      # Windows thumbnails

@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: sgt-university-landing
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: VITE_SUPABASE_URL
+        value: https://pnpkdolsrefsqexuqqta.supabase.co
+      - key: VITE_SUPABASE_KEY
+        value: your_supabase_key
+      - key: VITE_OPENAI_API_KEY
+        value: your_openai_key
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USER
+        value: kcube.consultingpartners@gmail.com
+      - key: SMTP_PASS
+        value: your_email_password
+      - key: EMAIL_TO
+        value: vivgoyal@kcube.consulting.com
+      - key: TWILIO_ACCOUNT_SID
+        value: your_twilio_sid
+      - key: TWILIO_AUTH_TOKEN
+        value: your_twilio_token
+      - key: TWILIO_WHATSAPP_NUMBER
+        value: whatsapp:+14155238886
